@@ -106,7 +106,7 @@ company to 50% using DMAIC phases.
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
 |:-----------------------------------------------------:|
-| via email <marshatinambunan@gmail.com>                |
+| via <marshatinambunan@gmail.com>                      |
 | via LinkedIn [@Marsha Tinambunan][LinkedIn]           |
 | via **0813-8499-4501** — [Call][Call] / [SMS][SMS]    |
 | and also available via [WhatsApp][WhatsApp]           |
