@@ -3,21 +3,107 @@ permalink:      /
 title:          Home
 menu_index:     0
 ---
-# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-left"}')
+<style>
+main div.container { max-width: 640px; }
+progress, meter { height: 0.5em; }
+</style>
+# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center"}')
 
 ---
+## About Me
 
-### Reach Me
+### **Hi there, Marsha here**
 
-Hi there, Marsha here. I do many things, Call me to know more.
+An _Industrial Engineering_ graduate with professional experience in quality control,
+specifically in the logistics industry and facilities design. Familiar with
+CRM development, work performance, system, and design analysis, and logistics
+terms.
 
-- via **0821-1307-6171** — [Call][Call] / [SMS][SMS]
-- also available via [WhatsApp][WhatsApp]
-- via Instagram DM [@djemarjakarta][Instagram]
-- via LINE [@uct8262a][Line]
+I am also self-aware of myself and this quality results in the tendency to always be
+critical as to why things happen and how can we make things better, especially for
+things with positive causes.
+
+<br>
 
 ---
+## Experience
 
+### **PT. Chandra Adi Sentosa** | July 2017 — Present
+**_Quality Control Inspector_**
+
+Developed a standardized operational procedure based on thorough analysis
+of the business process and work system that increases the capacity of
+customs clearance process from 15,000 parcels per day to 25,000 parcels per
+day.
+
+Monitored the performance of all operational staff to provide a 2-days customs
+clearance process for Lazada (currently one of the largest e-commerce) with
+average shipment increase from 5,000 to 90,000 parcels per day within 3
+months.
+
+<br>
+
+### **PT. Mattel Indonesia** | Feb 2016 — Jul 2016
+**_Industrial Engineering Intern_**
+
+Made the facility layout design of Hot Wheels plant in Jababeka, Cikarang with
+capacity of 64 million Hot Wheels per year.
+
+Made a Single Minutes Exchange of Dies analysis for the packing area of Barbie
+plant which saved up to 290 millions Rupiah per month of usage.
+
+<br>
+
+---
+## Education
+
+### _(B. Eng.)_ | **President University** | 2013 — 2017
+
+|[](# '{">":"find","tag":"table","className":"responsive card"}')|
+|:--------------------------:|:------------------------------------------------------------------:|
+| **_Cumulative GPA: 3.29_** | <meter class="" value="3.29" min="0" max="4">3.29 out of 4</meter> |
+
+**_Thesis_** | Reducing Defect Handling Found in Hot Rolled Coils Using DMAIC Phases in
+Finished Product Distribution Warehouse (2017)
+
+Made an analysis that aims to reduce the defect handling in a steel manufacturing
+company to 50% using DMAIC phases.
+
+<br>
+
+### _(Science Class)_ | **SMA 78 Jakarta** | 2010 — 2013
+
+<br>
+
+---
+## Skills
+
+|[](# '{">":"find","tag":"table","className":"responsive card"}')|
+|:-------------------------:|:--------------------------------------------------------------:|
+|                   AutoCAD | <meter class="" value="7" min="0" max="10">7 out of 10</meter> |
+|                SolidWorks | <meter class="" value="7" min="0" max="10">7 out of 10</meter> |
+|           Adobe Photoshop | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
+|  Microsoft Office & Visio | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
+| Work Performance Analysis | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
+|        Lean Manufacturing | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
+|                Ergonomics | <meter class="" value="6" min="0" max="10">6 out of 10</meter> |
+|                 Six Sigma | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
+
+<br>
+
+---
+## Contact
+
+|[](# '{">":"find","tag":"table","className":"responsive card"}')|
+|:-----------------------------------------------------:|
+| via email <marshatinambunan@gmail.com>                |
+| via LinkedIn [@Marsha Tinambunan][LinkedIn]           |
+| via **0813-8499-4501** — [Call][Call] / [SMS][SMS]    |
+| and also available via [WhatsApp][WhatsApp]           |
+
+<br>
+
+---
 ## Inspiring Quote
 
 > Such beautiful and good girl, lovely and cute.
@@ -28,10 +114,9 @@ Hi there, Marsha here. I do many things, Call me to know more.
 >
 > ~ Random Guy
 
----
-
-[WhatsApp]:     https://api.whatsapp.com/send?phone=6282113076171&text=Hi%20Marsha%2C%20how%20are%20you%3F
-[Call]:         tel:+6282113076171
-[SMS]:          sms:+6282113076171
+[LinkedIn]:     https://www.linkedin.com/in/marsha-tinambunan-117b11b9/
+[WhatsApp]:     https://api.whatsapp.com/send?phone=6281384994501&text=Hi%20Marsha%2C%20how%20are%20you%3F
+[Call]:         tel:+6281384994501
+[SMS]:          sms:+6281384994501
 [Instagram]:    https://www.instagram.com/djemarjakarta/
 [Line]:         https://line.me/ti/p/@uct8262a

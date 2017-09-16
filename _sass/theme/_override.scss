@@ -276,6 +276,14 @@ table.responsive {
     }}
   }
 }
+.yellow {
+  section { background-color: $y-color; color: $dark-color; }
+  .inline-menu { color:$y-color; .active a { border-color:$y-color; }
+    li a { color: $y-color; &:active, &:focus, &:hover {
+      background-color:$y-color; color:$dark-color;
+    }}
+  }
+}
 
 .rotator {
   position: fixed;
