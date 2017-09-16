@@ -73,8 +73,7 @@ plant which saved up to 290 millions Rupiah per month of usage.
 |:--------------------------:|:------------------------------------------------------------------:|
 | **_Cumulative GPA: 3.29_** | <meter class="" value="3.29" min="0" max="4">3.29 out of 4</meter> |
 
-**_Thesis_** | Reducing Defect Handling Found in Hot Rolled Coils Using DMAIC Phases in
-Finished Product Distribution Warehouse (2017)
+_Reducing Defect Handling Found in Hot Rolled Coils Using DMAIC Phases in Finished Product Distribution Warehouse_ **(2017 — Thesis)**
 
 Made an analysis that aims to reduce the defect handling in a steel manufacturing
 company to 50% using DMAIC phases.
