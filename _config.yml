@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# YAML guide
+# https://stackoverflow.com/a/21699210/4729477
+#
+########################################
+title:        Marsha Tinambunan
+email:        marshatinambunan@gmail.com
+description:  |
+  Hi there, Marsha here. I do many things, Call me to know more.
+baseurl:      "" # the subpath of your site, e.g. /blog
+url:          https://mar-sha.github.io # the base hostname & protocol for your site, e.g. http://example.com
+repository:   mar-sha/mar-sha.github.io
+########################################
+analytics:
+  google:     # UA-XXXXXXXX-X
+  mixpanel:   # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  yandex:     # XXXXXXXX
+disqus:
+  shortname:  # XXXXXXXX
+########################################
+limit_posts:  12
+permalink:    pretty
+show_drafts:  false
+unpublished:  false
+future:       false
+########################################
+defaults:
+  - ####################################
+    scope:
+      path:   ""
+    values:
+      layout: page
+      author: Marsha Tinambunan
+  - ####################################
+    scope: { path: _posts }
+    values: { layout: post }
+  - ####################################
+    scope: { path: _drafts }
+    values: { layout: post }
+########################################
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+########################################
+sass:
+  style: compressed
+########################################
+gems:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+########################################
+exclude:
+  - Gemfile
+  - Gemfile.lock
+########################################

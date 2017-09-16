@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+$serif-font-family:   Georgia, Times, "Times New Roman", serif !default;
+$monospace-family:    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$base-font-family:    BlinkMacSystemFont,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
+$web-font-family:     "Montserrat", $base-font-family;
+$base-font-weight:    400 !default;
+$base-font-size:      16px !default;
+$base-line-height:    1.5 !default;
+$spacing-unit:        16px !default;
+
+// Colors
+$t-color: #FF66FF !default; // taro
+$r-color: #C40233 !default; // red
+$g-color: #009F6B !default; // green
+$b-color: #0087BD !default; // blue
+$c-color: #14A3C7 !default; // cyan
+$m-color: #D23C77 !default; // magenta
+$y-color: #FFD300 !default; // yellow
+
+$dark-color:          #222 !default;
+$dark-alt-color:      #444 !default;
+$light-color:         #fafafa !default;
+$light-alt-color:     #ccc !default;
+$accent-color:        $b-color !default;
+$accent-alt-color:    $y-color !default;
+
+// Width of the content area
+$content-width:       800px !default;
+$on-md:               480px !default;
+$on-lg:               960px !default;
+
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "lib/normalize",
+  "lib/nprogress",
+  "lib/ratio",
+  "lib/layout",
+  "theme/base",
+  "theme/override"
+;

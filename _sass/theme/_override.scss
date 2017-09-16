@@ -1,0 +1,340 @@
+.err404 { max-width: 560px; }
+
+a.embed {
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    color: $light-color;
+    top: 50%; left: 50%;
+    width: 2em; height: 2em;
+    z-index: 2;
+  }
+  &:before {
+    @include relative-font-size(1.25);
+    background: $dark-color;
+    box-shadow: 0 0 0 3px;
+    border-radius: 50%;
+    margin: -1em;
+  }
+  &:after {
+    @include relative-font-size(.5);
+    border: solid 1em transparent;
+    border-left: solid 1.5em;
+    width: 0; height: 0;
+    margin: -1em -.5em;
+  }
+  &:active, &:focus, &:hover {
+    &:before {
+      background: $r-color;
+    }
+  }
+}
+
+/* Style override Highlight
+  =========================================================================== */
+.highlight {
+  padding: 0; text-align: left;
+  margin: 0 -#{$spacing-unit};
+  background: transparent;
+  pre, &{ box-shadow: none; border-radius: 0; }
+  @include media-query($on-md) {
+    margin: $spacing-unit;
+    pre{ border-radius: 3px; }
+  }
+  @extend %vertical-rhythm;
+}
+
+/* Style override Grid Layout
+  =========================================================================== */
+.row,.flex {
+  padding: 0 $spacing-unit/2;
+  margin: -$spacing-unit/2 0;
+  > [class*= col-],
+  > [class^=col-] { padding: $spacing-unit/2; }
+  .col-sm-0, .col-md-0, .col-lg-0 {
+    padding: 0; height: 0; overflow: hidden;
+  }
+  * {
+    &:last-child { margin-bottom: 0; }
+    &:first-child { margin-top: 0; }
+  }
+}
+
+/* Style extend Modal Full
+  =========================================================================== */
+.Modal {
+  background-color: $light-alt-color;
+  box-shadow: 0 0 $base-font-size*0.25 $dark-color;
+  color: $dark-color;
+  &.sticky {
+    .header { padding-right: 0; }
+    .close {
+      width: $base-font-size*0; height: $base-font-size*0;
+      &:after { @include relative-font-size(0); }
+    }
+  }
+  &.full {
+    width: 100%; height: 100%; max-width: 100%;
+    padding: $spacing-unit;
+  }
+  .header { padding-right: $base-font-size*4; }
+  .close {
+    background-color: inherit; width: $base-font-size*4; height: $base-font-size*4;
+    &:after { @include relative-font-size(4); background-color: inherit; }
+    &:active, &:focus, &:hover {
+      &:after { background-color: #c03; color: $light-alt-color; }
+    }
+  }
+  width: 100%; height: 100%;
+  @include media-query($on-md) {
+    width: 90%; height: 80%; border-radius: $base-font-size*0.25;
+  }
+}
+
+/* Style extend Ratio
+  =========================================================================== */
+.ratio {
+  @extend %checkered;
+}
+
+/* Style override NProgress
+  =========================================================================== */
+#nprogress {
+  .bar {
+    height: 2px; background-color: $accent-alt-color;
+    .peg { box-shadow: 0 0 $spacing-unit $accent-alt-color, 0 0 $spacing-unit/2 $accent-alt-color; }
+  }
+  .spinner {
+    top: $spacing-unit; right: $spacing-unit;
+    &-icon {
+      width: $spacing-unit; height: $spacing-unit;
+      border: solid 2px transparent;
+      border-top-color: $accent-alt-color;
+      border-left-color: $accent-alt-color;
+    }
+  }
+  &:after {
+    content: 'Loading...';
+    text-align: center; position: fixed; display: block;
+    @include relative-font-size(2); opacity: .5;
+    margin: 0; padding: 0; line-height: 0;
+    width: 100%; top: 50%; left: 0;
+  }
+}
+.nprogress-busy main { opacity: 0; }
+
+/* OVERRIDE Responsive inline menu
+  =========================================================================== */
+.menu{ min-height: $spacing-unit+28; }
+.inline-menu {
+  background-color: $light-color;
+  color: $dark-color;
+  .active a { border-color: $dark-color; }
+  li a {
+    font-weight: 600;
+    color: $dark-color;
+    padding: $spacing-unit/2 $spacing-unit/2;
+    @include media-query($on-md) {
+      padding: $spacing-unit/2 $spacing-unit;
+    }
+    &:active, &:focus, &:hover {
+      background-color: $dark-color;
+      color: $light-color;
+    }
+  }
+}
+footer a { font-weight: 600; }
+
+/* OVERRIDE Interactive Markdown
+  =========================================================================== */
+table.responsive {
+  thead, tbody { margin: 0 -16px; }
+  .avatar img , .closeup img { border-radius: 15%; padding: 1em; width: 200px; border: solid 2px; margin-bottom: $spacing-unit; }
+  .avatar img { border-radius: 50%; }
+}
+
+.card {
+  max-width: 400px;
+  border-radius: 3px;
+  margin: $spacing-unit auto;
+  &.black,&.white {
+    background-color: $dark-color;
+    border: solid 1px $dark-alt-color;
+    color: $light-color;
+    padding: $spacing-unit*2 $spacing-unit;
+    font-weight: 600;
+    text-align: center;
+  }
+  &.white {
+    background-color: $light-color;
+    border: solid 1px $light-alt-color;
+    color: $dark-color;
+    a { color: $b-color; }
+    [alt="logo"] { max-height: 60px; margin: -8px 0; }
+    [alt="qr"] { max-height: 80px; margin: -16px 0; }
+    @include media-query($on-md) {
+      [alt="logo"] { max-height: 80px; margin: -12px 0; }
+      [alt="qr"] { max-height: 100px; margin: -20px 0; }
+    }
+  }
+  .card-list & {
+    margin: $spacing-unit*2 auto;
+    &:first-child { margin-top: $spacing-unit; }
+    &:last-child { margin-bottom: $spacing-unit; }
+    &:first-child:after { display: none; }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      box-sizing: border-box;
+    }
+    &:before {
+      width: $spacing-unit;
+      height: $spacing-unit;
+      border: solid $spacing-unit/4;
+      margin-bottom: -$spacing-unit*1.75;
+      margin-left: -$spacing-unit/4;
+      background-color: $light-color;
+      border-radius: 100%;
+      color: #f00;
+    }
+    &:after {
+      height: ($spacing-unit*3)+3;
+      border-left: solid $spacing-unit/4;
+      margin-bottom: (-$spacing-unit)-2;
+      margin-left: $spacing-unit/8;
+      color: $light-color;
+      box-shadow: 0 0 1em $dark-color;
+    }
+    ul li{
+      a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        margin: .5em 0;
+        &:before {
+          content: '\25b2';
+          padding: .5em;
+        }
+      }
+      .down a:before {
+        content: '\25bc';
+      }
+    }
+    @media print {
+      & { padding: 1px; }
+      &:before,
+      &:after {
+        content:""; display:none!important;
+      }
+    }
+  }
+  &.social p { max-width: 120px; text-align: left; }
+  > p:first-child { color: $t-color; }
+  ul { text-align: left; list-style: none; padding: 0; }
+}
+
+/* OVERRIDE Theme Color
+  =========================================================================== */
+.red, .green, .blue, .dark {
+  blockquote { &:before { color: $y-color; } }
+  a { color: $y-color; }
+}
+.red {
+  section { background-color: $r-color; color: $light-color; }
+  .inline-menu { color:$r-color; .active a { border-color:$r-color; }
+    li a { color: $r-color; &:active, &:focus, &:hover {
+      background-color:$r-color; color:$light-color;
+    }}
+  }
+}
+.green {
+  section { background-color: $g-color; color: $light-color; }
+  .inline-menu { color:$g-color; .active a { border-color:$g-color; }
+    li a { color: $g-color; &:active, &:focus, &:hover {
+      background-color:$g-color; color:$light-color;
+    }}
+  }
+}
+.blue {
+  section { background-color: $b-color; color: $light-color; }
+  .inline-menu { color:$b-color; .active a { border-color:$b-color; }
+    li a { color: $b-color; &:active, &:focus, &:hover {
+      background-color:$b-color; color:$light-color;
+    }}
+  }
+}
+.dark {
+  section { background-color: $dark-color; color: $light-color; }
+  .inline-menu { color:$dark-color; .active a { border-color:$dark-color; }
+    li a { color: $dark-color; &:active, &:focus, &:hover {
+      background-color:$dark-color; color:$light-color;
+    }}
+  }
+}
+
+.rotator {
+  position: fixed;
+  @include media-query($on-lg) {
+    right: 0;
+    top: 0;
+    z-index: 5;
+    border: solid;
+    @include relative-font-size(2);
+    border-radius: 50%;
+    margin: 0.2em;
+    height: 1em;
+    width: 1em;
+    border-top-color: $r-color;
+    border-left-color: $g-color;
+    border-right-color: $b-color;
+    border-bottom-color: $y-color;
+    opacity: 1; border-width: 3px; box-shadow: 0 0 0 transparent;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+      -webkit-animation: nprogress-spinner 400ms linear infinite;
+              animation: nprogress-spinner 400ms linear infinite;
+      background: $dark-color;
+      opacity: .6; border-width: 6px; box-shadow: 0 0 0 3px;
+    }
+    &.clicked {
+      opacity: .3; border-width: 3px; box-shadow: 0 0 0 16px;
+    }
+  }
+}
+
+/* OVERRIDE Up Down Status
+  =========================================================================== */
+.down {
+  &, a { color: $r-color; }
+}
+.up, .down {
+  .work-list & {
+    color: $light-color;
+    &, a {
+      overflow: hidden;
+      border: solid 2px;
+    }
+  }
+}
+
+/* OVERRIDE Font Color
+  =========================================================================== */
+.color {
+  &-c { color: $c-color!important; }
+  &-m { color: $m-color!important; }
+  &-y { color: $y-color!important; }
+  &-r { color: $r-color!important; }
+  &-g { color: $g-color!important; }
+  &-b { color: $b-color!important; }
+}
+.align {
+  &-left { text-align: left; }
+  &-right { text-align: right; }
+  &-center { text-align: center; }
+  &-justify { text-align: justify; }
+}
