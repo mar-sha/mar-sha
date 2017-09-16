@@ -4,8 +4,18 @@ title:          Home
 menu_index:     0
 ---
 <style>
-main div.container { max-width: 640px; }
-progress, meter { height: 0.5em; }
+main div.container {
+    max-width: 640px;
+}
+progress, meter {
+    height: 0.5em;
+    margin: -1em 0 1em !important;
+}
+@media screen and (min-width: 480px){
+    progress, meter {
+        margin: 0 !important;
+    }
+}
 </style>
 # Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center"}')
 
@@ -14,14 +24,14 @@ progress, meter { height: 0.5em; }
 
 ### **Hi there, Marsha here**
 
-An _Industrial Engineering_ graduate with professional experience in quality control,
+An **_Industrial Engineering_** graduate with professional experience in quality control,
 specifically in the logistics industry and facilities design. Familiar with
 CRM development, work performance, system, and design analysis, and logistics
 terms.
 
 I am also self-aware of myself and this quality results in the tendency to always be
 critical as to why things happen and how can we make things better, especially for
-things with positive causes.
+things with **_positive causes_**.
 
 <br>
 
@@ -37,7 +47,7 @@ customs clearance process from 15,000 parcels per day to 25,000 parcels per
 day.
 
 Monitored the performance of all operational staff to provide a 2-days customs
-clearance process for Lazada (currently one of the largest e-commerce) with
+clearance process for Lazada (_currently one of the largest e-commerce_) with
 average shipment increase from 5,000 to 90,000 parcels per day within 3
 months.
 
@@ -57,7 +67,7 @@ plant which saved up to 290 millions Rupiah per month of usage.
 ---
 ## Education
 
-### _(B. Eng.)_ | **President University** | 2013 — 2017
+### **President University** | 2013 — 2017 | **_(B. Eng.)_**
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
 |:--------------------------:|:------------------------------------------------------------------:|
@@ -71,7 +81,7 @@ company to 50% using DMAIC phases.
 
 <br>
 
-### _(Science Class)_ | **SMA 78 Jakarta** | 2010 — 2013
+### **SMA 78 Jakarta** | 2010 — 2013 | **_(Science Class)_**
 
 <br>
 
