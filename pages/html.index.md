@@ -7,7 +7,7 @@ menu_index:     0
 main div.container {
     max-width: 640px;
 }
-img[src] {
+.logo > img {
     max-width: 200px;
 }
 progress, meter {
@@ -41,7 +41,7 @@ things with **_positive causes_**.
 ---
 ## Experience
 
-![CAS Logo](http://freightfolio.com/wp-content/uploads/2017/01/11849_107920.jpg)
+![CAS Logo][CAS Logo]
 ### **PT. Chandra Adi Sentosa** | July 2017 — Present
 **_Quality Control Inspector_**
 
@@ -57,7 +57,7 @@ months.
 
 <br>
 
-![Mattel Logo](http://vignette4.wikia.nocookie.net/dchallofjustice/images/2/2c/Logo-Mattel.png/revision/latest?cb=20100530022239)
+![Mattel Logo][Mattel Logo]
 ### **PT. Mattel Indonesia** | Feb 2016 — Jul 2016
 **_Industrial Engineering Intern_**
 
@@ -72,7 +72,7 @@ plant which saved up to 290 millions Rupiah per month of usage.
 ---
 ## Education
 
-![Campus Logo](https://upload.wikimedia.org/wikipedia/en/a/ae/President_University_Logo.png)
+![Campus Logo][Campus Logo]
 ### **President University** | 2013 — 2017 | **_(B. Eng.)_**
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
@@ -128,6 +128,10 @@ company to 50% using DMAIC phases.
 > Such beautiful and bad girl, she breaks my heart.
 >
 > ~ Random Guy
+
+[CAS Logo]:     http://freightfolio.com/wp-content/uploads/2017/01/11849_107920.jpg '[{">":"wrap","tag":"span","className":"logo"}]'
+[Mattel Logo]:  http://vignette4.wikia.nocookie.net/dchallofjustice/images/2/2c/Logo-Mattel.png/revision/latest?cb=20100530022239 '[{">":"wrap","tag":"span","className":"logo"}]'
+[Campus Logo]:  https://upload.wikimedia.org/wikipedia/en/a/ae/President_University_Logo.png '[{">":"wrap","tag":"span","className":"logo"}]'
 
 [LinkedIn]:     https://www.linkedin.com/in/marsha-tinambunan-117b11b9/
 [WhatsApp]:     https://api.whatsapp.com/send?phone=6281384994501&text=Hi%20Marsha%2C%20how%20are%20you%3F
