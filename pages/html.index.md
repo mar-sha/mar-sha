@@ -7,8 +7,14 @@ menu_index:     0
 main div.container {
     max-width: 640px;
 }
-.logo > img {
+.logo200px > img {
     max-width: 200px;
+}
+.logo100px > img {
+    max-width: 100px;
+}
+.logo400px > img {
+    max-width: 400px;
 }
 progress, meter {
     height: 0.5em;
@@ -129,9 +135,9 @@ company to 50% using DMAIC phases.
 >
 > ~ Random Guy
 
-[CAS Logo]:     http://freightfolio.com/wp-content/uploads/2017/01/11849_107920.jpg '[{">":"wrap","tag":"span","className":"logo"}]'
-[Mattel Logo]:  http://vignette4.wikia.nocookie.net/dchallofjustice/images/2/2c/Logo-Mattel.png/revision/latest?cb=20100530022239 '[{">":"wrap","tag":"span","className":"logo"}]'
-[Campus Logo]:  https://upload.wikimedia.org/wikipedia/en/a/ae/President_University_Logo.png '[{">":"wrap","tag":"span","className":"logo"}]'
+[CAS Logo]:     http://freightfolio.com/wp-content/uploads/2017/01/11849_107920.jpg '[{">":"wrap","tag":"span","className":"logo100px"}]'
+[Mattel Logo]:  http://vignette4.wikia.nocookie.net/dchallofjustice/images/2/2c/Logo-Mattel.png/revision/latest?cb=20100530022239 '[{">":"wrap","tag":"span","className":"logo200px"}]'
+[Campus Logo]:  https://upload.wikimedia.org/wikipedia/en/a/ae/President_University_Logo.png '[{">":"wrap","tag":"span","className":"logo400px"}]'
 
 [LinkedIn]:     https://www.linkedin.com/in/marsha-tinambunan-117b11b9/
 [WhatsApp]:     https://api.whatsapp.com/send?phone=6281384994501&text=Hi%20Marsha%2C%20how%20are%20you%3F
