@@ -7,6 +7,9 @@ menu_index:     0
 main div.container {
     max-width: 640px;
 }
+img[src] {
+    max-width: 200px;
+}
 progress, meter {
     height: 0.5em;
     margin: -1em 0 1em !important;
@@ -38,6 +41,7 @@ things with **_positive causes_**.
 ---
 ## Experience
 
+![CAS Logo](http://freightfolio.com/wp-content/uploads/2017/01/11849_107920.jpg)
 ### **PT. Chandra Adi Sentosa** | July 2017 — Present
 **_Quality Control Inspector_**
 
@@ -53,6 +57,7 @@ months.
 
 <br>
 
+![Mattel Logo](http://vignette4.wikia.nocookie.net/dchallofjustice/images/2/2c/Logo-Mattel.png/revision/latest?cb=20100530022239)
 ### **PT. Mattel Indonesia** | Feb 2016 — Jul 2016
 **_Industrial Engineering Intern_**
 
@@ -67,6 +72,7 @@ plant which saved up to 290 millions Rupiah per month of usage.
 ---
 ## Education
 
+![Campus Logo](https://upload.wikimedia.org/wikipedia/en/a/ae/President_University_Logo.png)
 ### **President University** | 2013 — 2017 | **_(B. Eng.)_**
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
