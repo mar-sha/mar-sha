@@ -12,6 +12,7 @@ main div.container {
 }
 .logo100px > img {
     max-width: 100px;
+    background-color: red;
 }
 .logo400px > img {
     max-width: 400px;
@@ -26,7 +27,7 @@ progress, meter {
     }
 }
 </style>
-# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center"}')
+# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center green"}')
 
 ---
 ## About Me
