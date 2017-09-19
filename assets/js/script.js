@@ -8,4 +8,5 @@ window.defer.push(() => {
     w.interactiveMD();
 
     w.NProgress.done();
+    w.runDefer(500);
 });
