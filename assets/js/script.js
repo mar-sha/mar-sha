@@ -9,3 +9,4 @@ window.defer.push(() => {
 
     w.NProgress.done();
 });
+window.runDefer = window.runDefer ? window.runDefer() : () => { };

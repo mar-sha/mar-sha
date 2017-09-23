@@ -7,6 +7,12 @@ menu_index:     0
 main div.container {
     max-width: 640px;
 }
+main.yellow section {
+  background-color: #ffcc44;
+}
+a {
+    font-weight: 600;
+}
 .logo200px > img {
     max-width: 200px;
 }
@@ -20,14 +26,28 @@ main div.container {
 progress, meter {
     height: 0.5em;
     margin: -1em 0 1em !important;
+    background: #fff;
+    box-shadow: 0 0 0 1px #ccc;
 }
+
+meter::-webkit-meter-bar {background: #fff;}
+progress::-webkit-progress-bar {background: #fff;}
+
+meter::-webkit-meter-optimum-value {background: #fa0015;}
+progress::-webkit-progress-value {background: #fa0015;}
+
+meter::-moz-meter-bar {background: #fa0015;}
+progress::-moz-progress-bar {background: #fa0015;}
+
+meter::-ms-meter-optimum-value {background: #fa0015;}
+progress::-ms-progress-value {background: #fa0015;}
 @media screen and (min-width: 480px){
     progress, meter {
         margin: 0 !important;
     }
 }
 </style>
-# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center green"}')
+# Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center yellow"}')
 
 ---
 ## About Me
@@ -136,9 +156,9 @@ company to 50% using DMAIC phases.
 >
 > ~ Random Guy
 
-[CAS Logo]:     https://mar-sha.github.io/assets/images/logo-cas.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
-[Mattel Logo]:  https://mar-sha.github.io/assets/images/logo-mattel.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
-[Campus Logo]:  https://mar-sha.github.io/assets/images/logo-campus.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
+[CAS Logo]:     {{ "/assets/images/logo-cas.png" | absolute_url }} '[{">":"wrap","tag":"span","className":"logo200px"}]'
+[Mattel Logo]:  {{ "/assets/images/logo-mattel.png" | absolute_url }} '[{">":"wrap","tag":"span","className":"logo200px"}]'
+[Campus Logo]:  {{ "/assets/images/logo-campus.png" | absolute_url }} '[{">":"wrap","tag":"span","className":"logo200px"}]'
 
 [LinkedIn]:     https://www.linkedin.com/in/marsha-tinambunan-117b11b9/
 [WhatsApp]:     https://api.whatsapp.com/send?phone=6281384994501&text=Hi%20Marsha%2C%20how%20are%20you%3F
