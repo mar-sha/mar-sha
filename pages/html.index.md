@@ -136,7 +136,7 @@ company to 50% using DMAIC phases.
 >
 > ~ Random Guy
 
-[CAS Logo]:     https://mar-sha.github.io/assets/images/logo-cas.jpg '[{">":"wrap","tag":"span","className":"logo200px"}]'
+[CAS Logo]:     https://mar-sha.github.io/assets/images/logo-cas.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
 [Mattel Logo]:  https://mar-sha.github.io/assets/images/logo-mattel.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
 [Campus Logo]:  https://mar-sha.github.io/assets/images/logo-campus.png '[{">":"wrap","tag":"span","className":"logo200px"}]'
 
