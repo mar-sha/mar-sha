@@ -24,6 +24,8 @@ a {
     max-width: 400px;
 }
 progress, meter {
+    width: 100%;
+    max-width: 200px;
     height: 0.5em;
     margin: -1em 0 1em !important;
     background: #fff;
@@ -47,9 +49,11 @@ progress::-ms-progress-value {background: #fa0015;}
     }
 }
 </style>
+
 # Marsha Tinambunan[](# '{">":"find","tag":"main","className":"align-center yellow"}')
 
 ---
+
 ## About Me
 
 ### **Hi there, Marsha here**
@@ -66,10 +70,13 @@ things with **_positive causes_**.
 <br>
 
 ---
+
 ## Experience
 
 ![CAS Logo][CAS Logo]
+
 ### **PT. Chandra Adi Sentosa** | July 2017 — Present
+
 **_Quality Control Inspector_**
 
 Developed a standardized operational procedure based on thorough analysis
@@ -85,7 +92,9 @@ months.
 <br>
 
 ![Mattel Logo][Mattel Logo]
+
 ### **PT. Mattel Indonesia** | Feb 2016 — Jul 2016
+
 **_Industrial Engineering Intern_**
 
 Made the facility layout design of Hot Wheels plant in Jababeka, Cikarang with
@@ -97,9 +106,11 @@ plant which saved up to 290 millions Rupiah per month of usage.
 <br>
 
 ---
+
 ## Education
 
 ![Campus Logo][Campus Logo]
+
 ### **President University** | 2013 — 2017 | **_(B. Eng.)_**
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
@@ -118,6 +129,7 @@ company to 50% using DMAIC phases.
 <br>
 
 ---
+
 ## Skills
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
@@ -125,8 +137,8 @@ company to 50% using DMAIC phases.
 |                   AutoCAD | <meter class="" value="7" min="0" max="10">7 out of 10</meter> |
 |                SolidWorks | <meter class="" value="7" min="0" max="10">7 out of 10</meter> |
 |           Adobe Photoshop | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
-|  Microsoft Office & Visio | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
-| Work Performance Analysis | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
+|         MS Office & Visio | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
+|      Performance Analysis | <meter class="" value="9" min="0" max="10">9 out of 10</meter> |
 |        Lean Manufacturing | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
 |                Ergonomics | <meter class="" value="6" min="0" max="10">6 out of 10</meter> |
 |                 Six Sigma | <meter class="" value="8" min="0" max="10">8 out of 10</meter> |
@@ -134,6 +146,7 @@ company to 50% using DMAIC phases.
 <br>
 
 ---
+
 ## Contact
 
 |[](# '{">":"find","tag":"table","className":"responsive card"}')|
@@ -146,6 +159,7 @@ company to 50% using DMAIC phases.
 <br>
 
 ---
+
 ## Inspiring Quote
 
 > Such beautiful and good girl, lovely and cute.

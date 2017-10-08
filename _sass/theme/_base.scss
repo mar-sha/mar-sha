@@ -1,301 +1,383 @@
 /* Basic styling
-  =========================================================================== */
+=========================================================================== */
 *{
-   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  position: relative;
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+                box-sizing: border-box;
+                  position: relative;
 }
-*,*:active,*:focus{
-  -webkit-tap-highlight-color: transparent;
-           -moz-outline-width: 0;
-                outline-width: 0;
-                outline-style: none;
-                      outline: 0;
+*,
+*:active,
+*:focus{
+ -webkit-tap-highlight-color: transparent;
+          -moz-outline-width: 0;
+               outline-width: 0;
+               outline-style: none;
+                     outline: 0;
 }
 body {
-  font: 400 #{$base-font-size}/#{$base-line-height} $base-font-family;
-  @extend %overflowcolor;
+    font: normal 400 #{$base-font-size}/#{$base-line-height} $base-font-family;
+    overflow-x: hidden;
+    @extend %overflowcolor;
 }
 .font {
-  &-serif {font-family: $serif-font-family; }
-  &-mono {font-family: $monospace-family; }
-  &-web {font-family: $web-font-family; }
+    &-serif {font-family: $serif-font-family; }
+    &-mono {font-family: $monospace-family; }
+    &-web {font-family: $web-font-family; }
+    &-small {font-size: 87.5%; }
+    &-large {font-size: 112.5%; }
+    &-xsmall {font-size: 80%; }
+    &-xlarge {font-size: 120%; }
+}
+.color {
+    &-c { color: $c-color!important; }
+    &-m { color: $m-color!important; }
+    &-y { color: $y-color!important; }
+    &-r { color: $r-color!important; }
+    &-g { color: $g-color!important; }
+    &-b { color: $b-color!important; }
+}
+.align {
+    &-left { text-align: left; }
+    &-right { text-align: right; }
+    &-center { text-align: center; }
+    &-justify { text-align: justify; }
 }
 main {
-  background-color: $light-color;
-  color: $dark-color;
-  @extend %ease;
-  > footer {
-    font-size: 80%;
-    padding: $spacing-unit 0;
-    @extend %overflowcolor;
-  }
+    background-color: $light-color;
+    color: $dark-color;
+    @extend %ease;
+    > footer {
+        @include relative-font-size(.875);
+        padding: $spacing-unit 0;
+        @extend %overflowcolor;
+        a {
+            font-weight: 600;
+        }
+    }
 }
 section {
-  @extend %ease;
+    @extend %ease;
 }
 /* Set `margin-top-bottom` to maintain vertical rhythm
-  =========================================================================== */
+=========================================================================== */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 ul, ol, dl, figure, fieldset,
 %vertical-rhythm {
-  margin: $spacing-unit auto;
+    margin: $spacing-unit auto;
 }
 
 /* Word break
-  =========================================================================== */
+=========================================================================== */
 article,
 aside,
 footer,
 header,
 nav,
 section {
-  word-break: break-word;
+    word-break: break-word;
 }
 
 /* Images
-  =========================================================================== */
+=========================================================================== */
 img {
-  max-width: 100%;
-  vertical-align: middle;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 /* Figures
-  =========================================================================== */
+=========================================================================== */
 figure {
-  text-align: center;
-  font-style: italic;
-  font-weight: 600;
-  @include relative-font-size(0.875);
-  margin: 0 (-$spacing-unit);
-  padding: 0 0 ($spacing-unit);
-  color: $dark-color;
-  background-color: #fff;
-  &, & > *:first-child{
-    box-shadow: 0 0 0 1px $light-alt-color;
-  }
-  > figcaption {
-    margin-top: $spacing-unit;
-  }
-  @include media-query($on-md) {
-    margin: 0 auto;
-    border-radius: $spacing-unit/2;
-    padding: $spacing-unit;
-  }
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    @include relative-font-size(0.875);
+    margin: 0 (-$spacing-unit);
+    padding: 0 0 ($spacing-unit);
+    color: $dark-color;
+    background-color: #fff;
+    &,
+    & > *:first-child{
+        box-shadow: 0 0 0 1px $light-alt-color;
+    }
+    > figcaption {
+        margin-top: $spacing-unit;
+    }
+    @include media-query($on-md) {
+        margin: 0 auto;
+        border-radius: $spacing-unit/2;
+        padding: $spacing-unit;
+    }
 }
 
 /* Lists
-  =========================================================================== */
+=========================================================================== */
 ul, ol {
-  // margin-left: $spacing-unit;
-  padding: 0 $spacing-unit;
+    // margin-left: $spacing-unit;
+    padding: 0 $spacing-unit;
 }
 li {
-  > ul,
-  > ol {
-    margin: 0;
-  }
+    > ul,
+    > ol {
+        margin: 0;
+    }
 }
 
 /* Headings
-  =========================================================================== */
+=========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $web-font-family;
+    font-family: $web-font-family;
 }
-h1, h2 { font-weight: 400; }
-h3, h4 { font-weight: 400; }
-h5, h6 { font-weight: 600; }
+h1 {
+    font-size: 3em;
+    font-weight: 200;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+h4 {
+    font-weight: 500;
+}
+h5 {
+    font-weight: 600;
+}
+h6 {
+    font-weight: 700;
+}
 
 /* Links
-  =========================================================================== */
+=========================================================================== */
 a {
-  display:inline-block;
-  color: $accent-color;
-  text-decoration: none;
-  &:active, &:focus, &:hover { text-decoration: underline; }
-  @extend %ease;
+    display:inline-block;
+    color: $accent-color;
+    text-decoration: none;
+    &:not(.button):active,
+    &:not(.button):focus,
+    &:not(.button):hover {
+        text-decoration: underline;
+    }
 }
 
 /* Horizontal rule
-  =========================================================================== */
+=========================================================================== */
 hr {
-  opacity: .25;
-  border: 0;
-  border-top: dashed 2px;
+    opacity: .25;
+    border: 0;
+    border-top: dashed 2px;
+    width: $spacing-unit*4;
+    margin: $spacing-unit*2 auto;
 }
 
 /* Blockquotes
-  =========================================================================== */
+=========================================================================== */
 blockquote {
-  padding: $spacing-unit 0;
-  margin: $spacing-unit 0;
-  font-family: $serif-font-family;
-  @include relative-font-size(1.25);
-  &:before {
-    content: '\275D';
-    color: $accent-color;
-    position: absolute; left: 50%; line-height: 0.5; opacity: .25;
-    @include relative-font-size(10);
-    width: 1em;
-    margin-left: -.5em;
-  }
-  p { font-weight: 100; display: inline; font-style: italic;
-    &:last-child { margin-bottom: 0; }
-    &:first-child { margin-top: 0; }
-    & + p:last-child {
-      display: block;
-      font-weight: 600;
-      font-family: $base-font-family;
-      @include relative-font-size(0.875);
-    }
-  }
-  @include media-query($on-md) {
+    padding: $spacing-unit 0;
     margin: $spacing-unit;
+    font-family: $serif-font-family;
+    @include relative-font-size(1.25);
     &:before {
-      font-size: $spacing-unit*4;
-      position: relative; left: 0; line-height: 0; opacity: .5;
+        content: '\275D';
+        color: $accent-color;
+        position: absolute;
+        text-align: center;
+        margin-left: -50%;
+        width: 100%;
+        @include relative-font-size(10);
+        line-height: 0.5;
+        opacity: .125;
+        left: 50%;
     }
-  }
-
+    p { font-weight: 100; font-style: italic; color: $dark-alt-color;
+        &:last-child { margin-bottom: 0; }
+        &:first-child { margin-top: 0; }
+        & + p:last-child {
+            font-weight: 600;
+            font-family: $base-font-family;
+            @include relative-font-size(0.875);
+        }
+    }
 }
 
 /* Code formatting
-  =========================================================================== */
+=========================================================================== */
 pre, code {
-  @include relative-font-size(0.875);
-  font-family: $monospace-family;
-  border: 1px solid $light-alt-color;
-  background-color: #eef;
-  color: $dark-color;
-  border-radius: 3px;
-  opacity: .9;
+    font: normal 400 #{$base-font-size*0.875}/#{$base-line-height} $monospace-family;
+    border: 1px solid $light-alt-color;
+    background-color: #eef;
+    color: $dark-color;
+    border-radius: 3px;
+    text-align: left;
+    opacity: .9;
 }
 
 code {
-  padding: 1px $base-font-size/4;
+    padding: 1px $base-font-size/4;
 }
 
 pre {
-  padding: $spacing-unit/2 $spacing-unit*0.75;
-  overflow-x: auto;
-  > code { border: 0; padding: 0; }
+    padding: $spacing-unit/2 $spacing-unit*0.75;
+    overflow-x: auto;
+    > code { border: 0; padding: 0; }
 }
 
 /* Table
-  =========================================================================== */
+=========================================================================== */
 table {
-  width: 100%;
-  overflow: auto;
-  display: block;
-  border-spacing: 0;
-  border-collapse: collapse;
-  word-break: normal;
-  th {
-    font-weight: bold;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: $spacing-unit/4 $spacing-unit;
-  }
-  tr {
-    color: $dark-color;
-    border-top: 1px solid #ccc;
-    background-color: $light-color;
-    th, &:nth-child(2n) {
-      background-color: $light-alt-color;
+    width: 100%;
+    overflow: auto;
+    display: block;
+    border-spacing: 0;
+    border-collapse: collapse;
+    word-break: normal;
+    th {
+        font-weight: bold;
     }
-  }
-  &.responsive{
-    margin: auto;
-    &, tbody,
-    tr, th, td {
-      display: block;
-      overflow: hidden;
+    th, td {
+        border: 1px solid #ddd;
+        padding: $spacing-unit/4 $spacing-unit;
     }
-    tr, th, td {
-      background-color: inherit;
-      color: inherit;
-      border: 0;
+    tr {
+        color: $dark-color;
+        border-top: 1px solid #ccc;
+        background-color: $light-color;
+        th, &:nth-child(2n) {
+            background-color: $light-alt-color;
+        }
     }
-  }
+    &.responsive{
+        margin: auto;
+        &,
+        thead, tbody,
+        tr, th, td {
+            display: block;
+            overflow: hidden;
+        }
+        thead, tbody {
+            margin: 0 -16px;
+        }
+        tr, th, td {
+            background-color: inherit;
+            color: inherit;
+            border: 0;
+        }
+    }
 }
 
 /* Container
-  =========================================================================== */
+=========================================================================== */
 .container {
-  max-width: $content-width;
-  margin: auto;
-  padding: 0 $spacing-unit;
-  & & { padding: 0; }
-  @extend %clearfix;
+    max-width: $content-width;
+    margin: auto;
+    padding: 0 $spacing-unit;
+    width: 100%;
+    & & { padding: 0; }
+    @extend %clearfix;
+    @extend %ease;
+    &.full { max-width: 100%!important; }
+    @include media-query($on-md) {
+        width: 80%;
+    }
 }
 
 /* a11y
-  =========================================================================== */
+=========================================================================== */
 .hide,
 %hide {
-  background-color: $light-color;
-  color: $dark-color;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+    background-color: $light-color;
+    color: $dark-color;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* block element
-  =========================================================================== */
+=========================================================================== */
 .block,
 %block {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
 }
 /* Clearfix
-  =========================================================================== */
+=========================================================================== */
 .clearfix { @extend %clearfix; }
 %clearfix:before,
 %clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Easing
-  =========================================================================== */
+=========================================================================== */
 .ease,
 %ease {
-  -webkit-transition: ease-in-out .3s;
-          transition: ease-in-out .3s;
+ -webkit-transition: ease-in-out .3s;
+         transition: ease-in-out .3s;
 }
 
 /* Checkered
-  =========================================================================== */
+=========================================================================== */
 .checkered,
 %checkered {
-  background-color: #fff;
-  background-position: 0 0,10px 10px;
-  -webkit-background-size: 20px 20px;
-  background-size: 20px 20px;
-  border: 0;
-  background-image: -webkit-linear-gradient(45deg,#eee 25%,transparent 25%,transparent 75%,#eee 75%,#eee),
-                    -webkit-linear-gradient(45deg,#eee 25%,transparent 25%,transparent 75%,#eee 75%,#eee);
+    background-color: #fff;
+    background-position: 0 0,10px 10px;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    border: 0;
+    background-image: -webkit-linear-gradient(45deg,#eee 25%,transparent 25%,transparent 75%,#eee 75%,#eee),
+                      -webkit-linear-gradient(45deg,#eee 25%,transparent 25%,transparent 75%,#eee 75%,#eee);
+}
+/* Emoticon, Ellipsises
+=========================================================================== */
+.emoticon {
+    width: 1.5em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+}
+.ellipsis {
+    &,
+    * {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .no-ellipsis {
+        &,
+        * {
+            white-space: normal;
+        }
+    }
+}
+[contenteditable] {
+    margin: -4px -16px;
+    padding: 4px 16px;
+    box-shadow: 0 0 0 1px $light-alt-color;
+    background: #fdffff;
 }
 
 /* Overflow color outside the <main> section
-  =========================================================================== */
+=========================================================================== */
 %overflowcolor{
-  background-color: $dark-color;
-  color: $light-color;
+    background-color: $dark-color;
+    color: $light-color;
 }
 @media print {
-  * {
-    background-color: #fff!important;
-    border-color: #666!important;
-    color: #333!important;
-  }
-  .no-print{
-    content:"";display:none!important;
-  }
+    * {
+        background-color: #fff!important;
+        border-color: #666!important;
+        color: #333!important;
+    }
+    .no-print{
+        content:"";display:none!important;
+    }
 }

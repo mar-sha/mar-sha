@@ -32,22 +32,22 @@ $on-md:               480px !default;
 $on-lg:               960px !default;
 
 @mixin media-query($device) {
-  @media screen and (min-width: $device) {
-    @content;
-  }
+    @media screen and (min-width: $device) {
+        @content;
+    }
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+    font-size: $base-font-size * $ratio;
 }
 
 // Import partials.
 @import
-  "lib/normalize",
-  "lib/nprogress",
-  "lib/form",
-  "lib/ratio",
-  "lib/layout",
-  "theme/base",
-  "theme/override"
+    "lib/normalize",
+    "lib/nprogress",
+    "lib/form",
+    "lib/ratio",
+    "lib/layout",
+    "theme/base",
+    "theme/extend"
 ;
